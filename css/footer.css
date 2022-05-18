@@ -1,0 +1,17 @@
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    bottom: 20px;
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    color: black;
+    background: white;
+    border-top: 2px solid black;
+  }
+
+  .page-footer a {
+    display: flex;
+    margin-left: 4px;
+  }
