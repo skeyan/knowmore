@@ -1,0 +1,62 @@
+/* Homepage Header */
+.homepage-header {
+    height: 800px;
+    font-size: 4rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.homepage-header--icon {
+    font-size: 2rem;
+    margin-top: 20px;
+    display: block;
+    -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+    color: blue;
+}
+
+.homepage-header--icon:hover {
+  cursor: pointer;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+
+/* Animations */
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+
+@keyframes pulse {
+0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
