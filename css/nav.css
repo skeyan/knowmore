@@ -1,0 +1,19 @@
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid black;
+    font-family: 'Enriqueta', serif;
+}
+
+/* The "Logo" */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Nav Items */
+.nav-item .active {
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+}
