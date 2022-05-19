@@ -25,12 +25,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Enriqueta:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Enriqueta:wght@400;500;600&family=IM+Fell+Great+Primer:ital@1&display=swap" rel="stylesheet">
     <!-- My Stylesheets -->
     <link href="./css/styles.css" rel="stylesheet" />
     <link href="./css/homepage.css" rel="stylesheet" />
@@ -80,9 +77,6 @@
         The history of U.S. abortion rights is still being written.
         <span
           class="homepage-header--icon"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-delay="800"
           onClick="document.getElementById('timeline').scrollIntoView();"
         >
           Scroll down to educate yourself.
@@ -95,7 +89,10 @@
     <section id="timeline" class="timeline">
       <ul class="main-ul">
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="media-collage">
+            <img src="./img/AMA_founding.png" alt="AMA founding" />
+          </div>
+          <div class="description" data-aos="fade-up">
             <time
               >1847: Formation of the American Medical Association (AMA)</time
             >
@@ -125,7 +122,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1880s: Criminalization and Vilification</time>
             <ul>
               <li class="description-li">
@@ -148,8 +145,13 @@
             </ul>
           </div>
         </li>
+        <li class="interlude--text">
+          <div class="interlude--text-content"  data-aos="flip-left">
+            "If each woman were allowed to judge for herself in this matter, her decision upon the abstract question would be too sure to be warped by personal considerations, and those of the moment: Woman's mind is prone to depression , and, indeed, to temporary actual derangement, under the stimulus of uterine excitation..." -HR Storer, 1866
+          </div>
+        </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1910: Abortion Bans Nationwide</time>
             <ul>
               <li class="description-li">
@@ -174,7 +176,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1930: Deaths from Illegal, Unsafe Abortions</time>
             <ul>
               <li class="description-li">
@@ -194,7 +196,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1955: Conference on Abortion Legalization</time>
             <ul>
               <li class="description-li">
@@ -216,7 +218,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1962: Thalidomide</time>
             <ul>
               <li class="description-li">
@@ -238,7 +240,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1964: Association for the Study of Abortion (ASA)</time>
             <ul>
               <li class="description-li">
@@ -260,7 +262,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1966: Trial of the San Francisco Nine </time>
             <ul>
               <li class="description-li">
@@ -282,7 +284,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1969: NARAL Established</time>
             <ul>
               <li class="description-li">
@@ -299,7 +301,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>Late 1960s and early 1970s: Abortion Reform</time>
             <ul>
               <li class="description-li">
@@ -329,7 +331,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1970: Legal Abortion in New York</time>
             <ul>
               <li class="description-li">
@@ -353,7 +355,7 @@
           </div>
         </li>
         <li class="main-li" id="roe">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1973: Roe v. Wade</time>
             <ul>
               <li class="description-li">
@@ -383,7 +385,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1976: Hyde Amendment Put Into Place</time>
             <ul>
               <li class="description-li">
@@ -423,7 +425,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>1984: Global Gag Rule</time>
             <ul>
               <li class="description-li">
@@ -452,7 +454,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time
               >1992: Planned Parenthood of Southeastern Pennsylvania v.
               Casey</time
@@ -470,7 +472,8 @@
                 <highlight>
                   requiring challenges to show that a law has the purpose or
                   effect of placing a substantial obstacle in the path of a
-                  patient seeking an abortion.</highlight>
+                  patient seeking an abortion.</highlight
+                >
               </li>
               <li class="description-li">
                 Following Casey, state politicians passed numerous medically
@@ -481,7 +484,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time
               >2007: Gonzales v. Carhart and Gonzales v. Planned Parenthood
               Federation of America</time
@@ -506,7 +509,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>2016: Whole Woman's Health v. Hellerstedt</time> The Supreme
             Court ruled that two Texas abortion restrictions were
             unconstitutional because they would shut down most abortion
@@ -515,7 +518,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>2020: June Medical Services v. Russo</time>
             <ul>
               <li class="description-li">
@@ -538,7 +541,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>2021: Texas Six-Week Ban</time>
             <ul>
               <li class="description-li">
@@ -557,7 +560,7 @@
           </div>
         </li>
         <li class="main-li">
-          <div data-aos="fade-up">
+          <div class="description" data-aos="fade-up">
             <time>Where We’re Headed </time>This history of abortion laws and
             court decisions provides important context to the road ahead.
             <ul>

@@ -3,7 +3,7 @@
 /* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .homepage-header {
-  height: 100vh;
+  height: 85vh;
   font-size: 4rem;
   text-align: center;
 
@@ -103,7 +103,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
 }
 
 /* Timeline "Line" */
-.timeline .main-ul .main-li {
+.timeline .main-ul .main-li, .timeline .main-ul .interlude--text {
   list-style-type: none;
   position: relative;
   width: 6px;
@@ -113,6 +113,10 @@ https://codepen.io/tutsplus/pen/QNeJgR
 
 .timeline .main-ul .main-li:not(:first-child) {
   padding-top: 650px;
+}
+
+.interlude--text {
+  padding-top: 250px;
 }
 
 /* The "Circles" on the Line */
@@ -129,7 +133,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
   z-index: 1;
 }
 
-.timeline .main-ul .main-li div {
+.timeline .main-ul .main-li .description {
   position: relative;
   bottom: 0;
   width: 700px;
@@ -138,7 +142,16 @@ https://codepen.io/tutsplus/pen/QNeJgR
   border: 4px solid blue;
 }
 
-.timeline .main-ul .main-li div::before {
+.timeline .main-ul .interlude--text .interlude--text-content {
+  position: relative;
+  bottom: 0;
+  width: 700px;
+  padding: 15px;
+  font-family: 'IM Fell Great Primer', serif;
+  font-size: 2rem;
+}
+
+.timeline .main-ul .main-li .description::before {
   content: "";
   position: absolute;
   bottom: 7px;
@@ -147,11 +160,11 @@ https://codepen.io/tutsplus/pen/QNeJgR
   border-style: solid;
 }
 
-.timeline .main-ul .main-li div {
+.timeline .main-ul .main-li .description {
   left: 45px;
 }
 
-.timeline .main-ul .main-li div::before {
+.timeline .main-ul .main-li .description::before {
   left: -15px;
   border-width: 8px 12px 8px 0;
   border-color: transparent blue transparent transparent;
@@ -172,16 +185,40 @@ highlight {
   font-weight: bold;
 }
 
+/* TIMELINE - MEDIA COLLAGE */
+.timeline .media-collage {
+  left: -439px;
+  transform: translate3d(-700px, 400px, 0);
+}
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1520px) {
-  .timeline .main-ul .main-li div {
+  .timeline .main-ul .main-li .description, .timeline .main-ul .interlude--text .interlude--text-content  {
     width: 500px;
+  }
+  /* MEDIA COLLAGE */
+  .timeline .media-collage {
+    transform: translate3d(-600px, 400px, 0);
+  }
+  .timeline .media-collage img {
+    width: 500px;
+  }
+  /* EXTRAS */
+  .timeline .main-ul .interlude--text .interlude--text-content {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 1110px) {
-  .timeline .main-ul .main-li div {
+  .timeline .main-ul .main-li .description, .timeline .main-ul .interlude--text .interlude--text-content {
+    width: 350px;
+  }
+  /* MEDIA COLLAGE */
+  .timeline .media-collage {
+    transform: translate3d(-400px, 400px, 0);
+  }
+  .timeline .media-collage img {
     width: 350px;
   }
 }
@@ -193,16 +230,30 @@ highlight {
   .homepage-header--icon {
     font-size: 1.2rem;
   }
-  .timeline .main-ul .main-li div {
+  time {
+    font-size: 1.2rem;
+  }
+  .timeline .main-ul .main-li .description, .timeline .main-ul .interlude--text .interlude--text-content {
     width: 250px;
+  }
+  /* MEDIA COLLAGE */
+  .timeline .media-collage {
+    transform: translate3d(-320px, 400px, 0);
+  }
+  .timeline .media-collage img {
+    width: 300px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .timeline .main-ul .main-li {
+  .timeline .main-ul .main-li, .timeline .main-ul .interlude--text {
     margin-left: 20px;
   }
-  .timeline .main-ul .main-li div {
+  .timeline .main-ul .main-li .description, .timeline .main-ul .interlude--text .interlude--text-content {
     width: calc(100vw - 91px);
+  }
+  /* MEDIA COLLAGE */
+  .timeline .media-collage {
+    display: none;
   }
 }
