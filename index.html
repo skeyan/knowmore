@@ -1,258 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Educate yourself on US abortion rights">
-    <meta name="author" content="Eva Yan">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Educate yourself on US abortion rights" />
+    <meta name="author" content="Eva Yan" />
     <title>Know More</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
 
     <!-- Animate -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/e7f86413cd.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e7f86413cd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- My Stylesheets -->
-    <link href="./css/styles.css" rel="stylesheet">
-    <link href="./css/homepage.css" rel="stylesheet">
-    <link href="./css/nav.css" rel="stylesheet">
-    <link href="./css/footer.css" rel="stylesheet">
-</head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #ffffff;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">KnowMore.</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./facts.html">The Facts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./donate.html">Donate</a>
-            </li>
-        </ul>
-    </div>
-    </div>
-</nav>
-
-<!-- Header -->
-<div class="homepage-header" data-aos="fade-up">
-    <div class="homepage-header--text">
-        The history of U.S. abortion rights is still being written.
-        <span class="homepage-header--icon"
-        data-aos="fade-up"
-        data-aos-easing="ease"
-        data-aos-delay="800"
-        onClick="document.getElementById('timeline').scrollIntoView();"
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/homepage.css" rel="stylesheet" />
+    <link href="./css/nav.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light"
+      style="background-color: #ffffff"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">KnowMore.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-            Scroll down to educate yourself.
-            <i class="fa-solid fa-chevron-down"></i>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./facts.html">The Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./donate.html">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="homepage-header" data-aos="fade-up">
+      <div class="homepage-header--text">
+        The history of U.S. abortion rights is still being written.
+        <span
+          class="homepage-header--icon"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-delay="800"
+          onClick="document.getElementById('timeline').scrollIntoView();"
+        >
+          Scroll down to educate yourself.
+          <i class="fa-solid fa-chevron-down"></i>
         </span>
+      </div>
     </div>
-</div>
 
-<!-- Timeline -->
-<section id="timeline" class="timeline">
-    <ul>
-      <li>
-        <div data-aos="fade-in">
-          <time>1847: Formation of the American Medical Association (AMA)</time> In 1847, doctors banded together to form the AMA. It became the male-dominated authority on medical practices. The AMA scrutinized reproductive health care workers, like midwives and nurses, and the obstetric  services they provided were phased out. AMA members believed they should have the power to decide when an abortion could be legally performed. At the same time, the AMA was composed of physicians who lacked expertise in pregnancy and reproductive health. AMA members launched a full-fledged criminalization campaign against abortion and female abortion providers. State legislatures moved to ban abortion.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1880s: Criminalization and Vilification</time> This backlash kicked off a “century of criminalization,” which was ended by Roe v. Wade in 1973 (see below).
+    <!-- Timeline -->
+    <section id="timeline" class="timeline">
+      <ul class="main-ul">
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time
+              >1847: Formation of the American Medical Association (AMA)</time
+            >
+            <ul>
+              <li class="description-li">
+                In 1847, doctors banded together to form the AMA. It became the
+                male-dominated authority on medical practices. The AMA
+                scrutinized reproductive health care workers, like midwives and
+                nurses, and the obstetric services they provided were phased
+                out.
+              </li>
+              <li class="description-li">
+                AMA members believed they should have the power to decide when
+                an abortion could be legally performed. At the same time, the
+                AMA was composed of physicians who lacked expertise in pregnancy
+                and reproductive health.
+              </li>
+              <li class="description-li">
+                AMA members launched a full-fledged criminalization campaign
+                against abortion and female abortion providers. State
+                legislatures moved to ban abortion.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1880s: Criminalization and Vilification</time>
+            <ul>
+              <li class="description-li">
+                This backlash kicked off a “century of criminalization,” which
+                was ended by <a href="#roe">Roe v. Wade</a> in 1973.
+              </li>
+              <li class="description-li">
+                Laws restricting abortion access became the norm.
+              </li>
+              <li class="description-li">
+                By 1880, all states had laws to restrict abortion — with
+                exceptions in some states if a doctor said the abortion was
+                needed to save the life or health of the patient, or for
+                therapeutic reasons.
+              </li>
+              <li class="description-li">
+                As abortion became criminalized, the stigma surrounding it grew.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1910: Abortion Bans Nationwide</time>
+            <ul>
+              <li class="description-li">
+                By 1910, abortion was not only restricted but outright illegal
+                at every stage in pregnancy in every state in the country. These
+                abortion bans had some exceptions in instances to save the
+                patient’s life — a decision that only doctors, 95% of whom were
+                men, had the power to make.
+              </li>
+              <li class="description-li">
+                By this time, America had experienced several decades of
+                increased immigration. Worried about losing their hold on the
+                country, white men in power supported abortion bans as a way to
+                get upper-class white women to have more children.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1930: Deaths from Illegal, Unsafe Abortions</time>
+            <ul>
+              <li class="description-li">
+                Criminalizing abortion sent the practice underground, which
+                resulted in a high death toll.
+              </li>
+              <li class="description-li">
+                Unsafe, illegal abortion was the cause of death for nearly 2,700
+                women in 1930 — almost one out of every five (18%) of recorded
+                maternal deaths that year, according to the Guttmacher
+                Institute.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1955: Conference on Abortion Legalization</time>
+            <ul>
+              <li class="description-li">
+                In response to increasingly alarming media coverage of unsafe,
+                illegal abortions, Planned Parenthood held a first-of-its-kind
+                conference on the issue of abortion.
+              </li>
+              <li class="description-li">
+                The doctors who attended the national conference on abortion
+                made the bold move to publicly call for abortion law reform.
+              </li>
+              <li class="description-li">
+                Conference attendees said that laws should be rewritten to allow
+                doctors greater latitude to provide abortion services, which
+                would improve public health and access to reproductive health
+                care for people of different economic circumstances.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1962: Thalidomide</time>
+            <ul>
+              <li class="description-li">
+                In the late 1950s and early ’60s, thousands of pregnant women
+                took a drug called thalidomide to ease pregnancy symptoms. The
+                problem: It was found to cause severe birth defects.
+              </li>
+              <li class="description-li">
+                In 1962, a pregnant TV host who ingested thalidomide could not
+                obtain a legal abortion in the United States. The media tracked
+                her journey to get an abortion in Sweden, and 52% of Americans
+                supported her.
+              </li>
+              <li class="description-li">
+                The thalidomide fallout brought greater support for abortion law
+                reform.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1964: Association for the Study of Abortion (ASA)</time>
+            <ul>
+              <li class="description-li">
+                In 1964, abortion law reform activists registered their first
+                national group: the Association for the Study of Abortion (ASA).
+              </li>
+              <li class="description-li">
+                Planned Parenthood joined doctors and laypeople leading the ASA
+                in advocating for abortion law reforms and for studies that
+                would advance abortion procedure safety.
+              </li>
+              <li class="description-li">
+                In a strategic move to incrementally increase abortion access,
+                the ASA advocated only for "medically necessary" abortions. But
+                members of the larger abortion law reform movement wanted a full
+                repeal to legalize abortion for all people.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1966: Trial of the San Francisco Nine </time>
+            <ul>
+              <li class="description-li">
+                Nine well-respected doctors were sued in California for
+                performing abortions on women who had been exposed to rubella, a
+                disease known to cause birth defects.
+              </li>
+              <li class="description-li">
+                Doctors across the country came to the defense of the San
+                Francisco Nine, including the deans of 128 medical schools.
+              </li>
+              <li class="description-li">
+                This resulted in one of the first abortion reform measures in
+                the United States. California amended its prohibition on
+                abortion to allow hospital committees to approve requests for
+                abortion.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1969: NARAL Established</time>
+            <ul>
+              <li class="description-li">
+                The National Association for the Repeal of Abortion Laws (NARAL)
+                was established in Chicago at the First National Conference on
+                Abortion Laws.
+              </li>
+              <li class="description-li">
+                NARAL was the first national group created solely to campaign
+                for the legalization of abortion, marking the start of direct
+                action to repeal abortion bans.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>Late 1960s and early 1970s: Abortion Reform</time>
+            <ul>
+              <li class="description-li">
+                By the late 1960s, a nationwide effort was underway to reform
+                abortion laws in nearly every state.
+              </li>
+              <li class="description-li">
+                Health care providers, advocates, clergy members, and the legal
+                community lobbied state legislatures and went to court to
+                overturn statutes that had been in place since before the turn
+                of the century. Between 1967 and 1973, four states — Alaska,
+                Hawaii, New York, and Washington — repealed their abortion bans
+                entirely, while 13 others enacted reforms that expanded
+                exceptions.
+              </li>
+              <li class="description-li">
+                Instead of just allowing for abortion to save the patient’s
+                life, they now allowed it in instances where a pregnancy was
+                dangerous for the physical or mental health of a patient, fetal
+                abnormalities, and when the pregnancy resulted from rape or
+                incest.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1970: Legal Abortion in New York</time>
+            <ul>
+              <li class="description-li">
+                In 1970, New York state legalized abortion. One day after that
+                law took effect, a Planned Parenthood health center in Syracuse
+                became the the first Planned Parenthood health center to provide
+                abortion services, and the first free-standing abortion center
+                nationwide.
+              </li>
+              <li class="description-li">
+                In the first two years after abortion was legalized in New York,
+                two-thirds of the abortions performed in the state were on
+                patients who had traveled from other states — most of which
+                still outlawed abortion. At the time, other states that had
+                legalized abortion required patients to be state residents.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li" id="roe">
+          <div data-aos="fade-up">
+            <time>1973: Roe v. Wade</time>
+            <ul>
+              <li class="description-li">
+                In a landmark decision, the U.S. Supreme Court ruled that the
+                due process clause of the 14th Amendment to the Constitution
+                protects the right to abortion.
+              </li>
+              <li class="description-li">
+                In particular, the Supreme Court recognized for the first time
+                that the constitutional right to privacy “is broad enough to
+                encompass a woman’s decision whether or not to terminate her
+                pregnancy.”
+              </li>
+              <li class="description-li">
+                Roe v. Wade protected the right to abortion in all 50 states,
+                making abortion services safer and more accessible throughout
+                the country.
+              </li>
+              <li class="description-li">
+                The decision also set a legal precedent that affected dozens of
+                subsequent Supreme Court cases.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1976: Hyde Amendment Put Into Place</time>
+            <ul>
+              <li class="description-li">
+                The Hyde Amendment is a discriminatory and racist policy that
+                prevents federal dollars from being used in government insurance
+                programs like Medicaid for abortion services (except in
+                instances of incest, rape, or life-threatening risk to the
+                pregnant person).
+              </li>
+              <li class="description-li">
+                The legislation was created by Rep. Henry Hyde. “I would
+                certainly like to prevent, if I could legally, anybody having an
+                abortion: a rich woman, a middle class woman, or a poor woman,”
+                he said. “Unfortunately, the only vehicle available is the
+                [Medicaid] bill.”
+              </li>
+              <li class="description-li">
+                Because of centuries of systemic racism and bias, Medicaid
+                disproportionately serves Black, Latino, and LGBTQ+ communities
+                — people who already face other barriers to care and economic
+                opportunity. Despite the federal law, 16 states currently
+                include abortion in their Medicaid programs using state funds.
+                (The remaining 34 states and the District of Columbia do not
+                have abortion coverage in their Medicaid programs due to the
+                Hyde Amendment).
+              </li>
+              <li class="description-li">
+                Thanks in large part to the advocacy of reproductive justice
+                organizations, in 2021 the Biden-Harris administration became
+                the first administration in decades to exclude the Hyde
+                Amendment from its presidential budget.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>1984: Global Gag Rule</time>
+            <ul>
+              <li class="description-li">
+                Former President Ronald Reagan introduced the Mexico City
+                policy, otherwise known as the global gag rule, in 1984.
+              </li>
+              <li class="description-li">
+                The global gag rule prevents foreign organizations that receive
+                U.S. health aid from providing information on and referrals for
+                abortions or advocating for abortion access.
+              </li>
+              <li class="description-li">
+                Every president since Reagan who supports abortion access has
+                rescinded the global gag rule, while every president since
+                Reagan who opposes abortion access has reinstated it.
+              </li>
+              <li class="description-li">
+                That includes President Donald Trump, who not only reinstated
+                it, but expanded the global gag rule to make it even more
+                harmful.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time
+              >1992: Planned Parenthood of Southeastern Pennsylvania v.
+              Casey</time
+            >
+            <ul>
+              <li class="description-li">
+                This landmark case reaffirmed that the Constitution protects the
+                right to abortion. However, Casey created an “undue burden”
+                framework, under which laws restricting access to abortion would
+                be judged.
+              </li>
+              <li class="description-li">
+                This framework made it more difficult to challenge laws that
+                were less than absolute prohibitions on abortion — requiring
+                challenges to show that a law has the purpose or effect of
+                placing a substantial obstacle in the path of a patient seeking
+                an abortion.
+              </li>
+              <li class="description-li">
+                Following Casey, state politicians passed numerous medically
+                unnecessary abortion restrictions across the country which
+                courts have found do not impose an undue burden.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time
+              >2007: Gonzales v. Carhart and Gonzales v. Planned Parenthood
+              Federation of America</time
+            >
+            <ul>
+              <li class="description-li">
+                The Supreme Court upheld the first federal legislation to
+                criminalize abortion, allowing Congress to ban certain
+                second-trimester abortion procedures — which are sometimes the
+                safest and best way to protect a patient’s health.
+              </li>
+              <li class="description-li">
+                Because the legislation does not contain an exception for the
+                patient’s health, the Supreme Court effectively overruled a key
+                component of Roe v. Wade: that the patient’s health must be of
+                paramount concern in laws that restrict abortion access.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>2016: Whole Woman's Health v. Hellerstedt</time> The Supreme
+            Court ruled that two Texas abortion restrictions were
+            unconstitutional because they would shut down most abortion
+            providers in the state and impose an “undue burden” on access to
+            safe, legal abortion in Texas.
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>2020: June Medical Services v. Russo</time>
+            <ul>
+              <li class="description-li">
+                On June 29, 2020 — in June Medical Services v. Russo — the
+                Supreme Court struck down a medically unnecessary law that was
+                nearly identical to the one it had struck down in Whole Woman’s
+                Health.
+              </li>
+              <li class="description-li">
+                This law would have made abortion virtually inaccessible in
+                Louisiana. Four justices dissented, and it was the last time
+                Ruth Bader Ginsburg had a chance to rule on abortion access
+                before she died later that year.
+              </li>
+              <li class="description-li">
+                Ginsburg was replaced by Amy Coney Barrett — who is one of three
+                Supreme Court justices nominated by Donald Trump.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>2021: Texas Six-Week Ban</time>
+            <ul>
+              <li class="description-li">
+                On Sept. 1, 2021, Texas implemented a dangerous law called S.B.
+                8. which bans abortion at approximately six weeks of pregnancy —
+                before many people even know they’re pregnant.
+              </li>
+              <li class="description-li">
+                The AMA denounced the Texas abortion ban, but the Supreme Court
+                allowed it to take effect.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-li">
+          <div data-aos="fade-up">
+            <time>Where We’re Headed </time>This history of abortion laws and
+            court decisions provides important context to the road ahead.
+            <ul>
+              <li class="description-li">
+                Right now, 80% of Americans want abortion to be legal.
+              </li>
+              <li class="description-li">
+                On December 1, 2021, the Supreme Court will hear oral arguments
+                in Dobbs v. Jackson Women’s Health Organization — a case about a
+                Mississippi ban on abortion at 15 weeks that’s a direct
+                challenge to Roe v. Wade. The state of Mississippi not only has
+                asked the Supreme Court to allow a pre-viability abortion ban,
+                in violation of one of the core tenets of Roe v. Wade, but also
+                has asked the Supreme Court to overrule Roe and Casey entirely.
+              </li>
+              <li class="description-li">
+                The Supreme Court will issue a decision in Dobbs v. Jackson
+                Women’s Health Organization by the end of June 2022. If Roe is
+                overturned or its protections are dismantled, then the laws
+                governing abortion will fall to individual state governments.
+                Many people of reproductive age will lose access to safe, legal
+                abortion in the United States.
+              </li>
+            </ul>
+            No matter what happens, Planned Parenthood will continue to fight to
+            uphold access to safe, legal abortion.
+          </div>
+        </li>
+      </ul>
+    </section>
 
-          Laws restricting abortion access became the norm.
+    <!-- Footer -->
+    <footer class="page-footer">
+      <span>made by Eva Y for MEDP 285.</span>
+    </footer>
 
-          By 1880, all states had laws to restrict abortion — with exceptions in some states if a doctor said the abortion was needed to save the life or health of the patient, or for therapeutic reasons.
-
-          As abortion became criminalized, the stigma surrounding it grew.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1910: Abortion Bans Nationwide</time> By 1910, abortion was not only restricted but outright illegal at every stage in pregnancy in every state in the country. These abortion bans had some exceptions in instances to save the patient’s life — a decision that only doctors, 95% of whom were men, had the power to make.
-
-          By this time, America had experienced several decades of increased immigration. Worried about losing their hold on the country, white men in power supported abortion bans as a way to get upper-class white women to have more children.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1930: Deaths from Illegal, Unsafe Abortions</time> Criminalizing abortion sent the practice underground, which resulted in a high death toll.
-
-          Unsafe, illegal abortion was the cause of death for nearly 2,700 women in 1930 — almost one out of every five (18%) of recorded maternal deaths that year, according to the Guttmacher Institute.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1955: Conference on Abortion Legalization</time> In response to increasingly alarming media coverage of unsafe, illegal abortions, Planned Parenthood held a first-of-its-kind conference on the issue of abortion.
-
-          The doctors who attended the national conference on abortion made the bold move to publicly call for abortion law reform.
-
-          Conference attendees said that laws should be rewritten to allow doctors greater latitude to provide abortion services, which would improve public health and access to reproductive health care for people of different economic circumstances.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1962: Thalidomide</time> In the late 1950s and early ’60s, thousands of pregnant women took a drug called thalidomide to ease pregnancy symptoms. The problem: It was found to cause severe birth defects.
-
-          In 1962, a pregnant TV host who ingested thalidomide could not obtain a legal abortion in the United States. The media tracked her journey to get an abortion in Sweden, and 52% of Americans supported her.
-
-          The thalidomide fallout brought greater support for abortion law reform.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1964: Association for the Study of Abortion (ASA)</time> In 1964, abortion law reform activists registered their first national group: the Association for the Study of Abortion (ASA).
-
-          Planned Parenthood joined doctors and laypeople leading the ASA in advocating for abortion law reforms and for studies that would advance abortion procedure safety.
-
-          In a strategic move to incrementally increase abortion access, the ASA advocated only for "medically necessary" abortions. But members of the larger abortion law reform movement wanted a full repeal to legalize abortion for all people.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1966: Trial of the San Francisco Nine </time> Nine well-respected doctors were sued in California for performing abortions on women who had been exposed to rubella, a disease known to cause birth defects.
-
-          Doctors across the country came to the defense of the San Francisco Nine, including the deans of 128 medical schools.
-
-          This resulted in one of the first abortion reform measures in the United States. California amended its prohibition on abortion to allow hospital committees to approve requests for abortion.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1969: NARAL Established</time> The National Association for the Repeal of Abortion Laws (NARAL) was established in Chicago at the First National Conference on Abortion Laws.
-
-          NARAL was the first national group created solely to campaign for the legalization of abortion, marking the start of direct action to repeal abortion bans.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>Late 1960s and early 1970s: Abortion Reform</time> By the late 1960s, a nationwide effort was underway to reform abortion laws in nearly every state.
-
-          Health care providers, advocates, clergy members, and the legal community lobbied state legislatures and went to court to overturn statutes that had been in place since before the turn of the century.
-
-          Between 1967 and 1973, four states — Alaska, Hawaii, New York, and Washington — repealed their abortion bans entirely, while 13 others enacted reforms that expanded exceptions. Instead of just allowing for abortion to save the patient’s life, they now allowed it in instances where a pregnancy was dangerous for the physical or mental health of a patient, fetal abnormalities, and when the pregnancy resulted from rape or incest.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1970: Legal Abortion in New York</time> In 1970, New York state legalized abortion. One day after that law took effect, a Planned Parenthood health center in Syracuse became the the first Planned Parenthood health center to provide abortion services, and the first free-standing abortion center nationwide.
-
-          In the first two years after abortion was legalized in New York, two-thirds of the abortions performed in the state were on patients who had traveled from other states  — most of which still outlawed abortion. At the time, other states that had legalized abortion required patients to be state residents.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1973: Roe v. Wade</time> In a landmark decision, the U.S. Supreme Court ruled that the due process clause of the 14th Amendment to the Constitution protects the right to abortion.
-
-          In particular, the Supreme Court recognized for the first time that the constitutional right to privacy “is broad enough to encompass a woman’s decision whether or not to terminate her pregnancy.”
-
-          Roe v. Wade protected the right to abortion in all 50 states, making abortion services safer and more accessible throughout the country. The decision also set a legal precedent that affected dozens of subsequent Supreme Court cases.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1976: Hyde Amendment Put Into Place</time> The Hyde Amendment is a discriminatory and racist policy that prevents federal dollars from being used in government insurance programs like Medicaid for abortion services (except in instances of incest, rape, or life-threatening risk to the pregnant person).
-
-          The legislation was created by Rep. Henry Hyde. “I would certainly like to prevent, if I could legally, anybody having an abortion: a rich woman, a middle class woman, or a poor woman,” he said. “Unfortunately, the only vehicle available is the [Medicaid] bill.”
-
-          Because of centuries of systemic racism and bias, Medicaid disproportionately serves Black, Latino, and LGBTQ+ communities — people who already face other barriers to care and economic opportunity.
-
-          Despite the federal law, 16 states currently include abortion in their Medicaid programs using state funds. (The remaining 34 states and the District of Columbia do not have abortion coverage in their Medicaid programs due to the Hyde Amendment).
-
-          Thanks in large part to the advocacy of reproductive justice organizations, in 2021 the Biden-Harris administration became the first administration in decades to exclude the Hyde Amendment from its presidential budget.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1984: Global Gag Rule</time> Former President Ronald Reagan introduced the Mexico City policy, otherwise known as the global gag rule, in 1984.
-
-          The global gag rule prevents foreign organizations that receive U.S. health aid from providing information on and referrals for abortions or advocating for abortion access.
-
-          Every president since Reagan who supports abortion access has rescinded the global gag rule, while every president since Reagan who opposes abortion access has reinstated it. That includes President Donald Trump, who not only reinstated it, but expanded the global gag rule to make it even more harmful.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>1992: Planned Parenthood of Southeastern Pennsylvania v. Casey</time> This landmark case reaffirmed that the Constitution protects the right to abortion.
-
-          However, Casey created an “undue burden” framework, under which laws restricting access to abortion would be judged. This framework made it more difficult to challenge laws that were less than absolute prohibitions on abortion — requiring challenges to show that a law has the purpose or effect of placing a substantial obstacle in the path of a patient seeking an abortion.
-
-          Following Casey, state politicians passed numerous medically unnecessary abortion restrictions across the country which courts have found do not impose an undue burden.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>2007: Gonzales v. Carhart and Gonzales v. Planned Parenthood Federation of America</time> The Supreme Court upheld the first federal legislation to criminalize abortion, allowing Congress to ban certain second-trimester abortion procedures — which are sometimes the safest and best way to protect a patient’s health.
-
-          Because the legislation does not contain an exception for the patient’s health, the Supreme Court effectively overruled a key component of Roe v. Wade: that the patient’s health must be of paramount concern in laws that restrict abortion access.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>2016: Whole Woman's Health v. Hellerstedt</time> The Supreme Court ruled that two Texas abortion restrictions were unconstitutional because they would shut down most abortion providers in the state and impose an “undue burden” on access to safe, legal abortion in Texas.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>2020: June Medical Services v. Russo</time> On June 29, 2020 — in June Medical Services v. Russo — the Supreme Court struck down a medically unnecessary law that was nearly identical to the one it had struck down in Whole Woman’s Health. This law would have made abortion virtually inaccessible in Louisiana.
-
-          Four justices dissented, and it was the last time Ruth Bader Ginsburg had a chance to rule on abortion access before she died later that year. Ginsburg was replaced by Amy Coney Barrett — who is one of three Supreme Court justices nominated by Donald Trump.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>2021: Texas Six-Week Ban</time>On Sept. 1, 2021, Texas implemented a dangerous law called S.B. 8. which bans abortion at approximately six weeks of pregnancy — before many people even know they’re pregnant.
-
-          The AMA denounced the Texas abortion ban, but the Supreme Court allowed it to take effect.
-        </div>
-      </li>
-      <li>
-        <div data-aos="fade-in">
-          <time>Where We’re Headed </time>This history of abortion laws and court decisions provides important context to the road ahead.
-
-          Right now, 80% of Americans want abortion to be legal.
-
-          On December 1, 2021, the Supreme Court will hear oral arguments in Dobbs v. Jackson Women’s Health Organization — a case about a Mississippi ban on abortion at 15 weeks that’s a direct challenge to Roe v. Wade. The state of Mississippi not only has asked the Supreme Court to allow a pre-viability abortion ban, in violation of one of the core tenets of Roe v. Wade, but also has asked the Supreme Court to overrule Roe and Casey entirely.
-
-          The Supreme Court will issue a decision in Dobbs v. Jackson Women’s Health Organization by the end of June 2022. If Roe is overturned or its protections are dismantled, then the laws governing abortion will fall to individual state governments. Many people of reproductive age will lose access to safe, legal abortion in the United States.
-
-          No matter what happens, Planned Parenthood will continue to fight to uphold access to safe, legal abortion.
-        </div>
-      </li>
-    </ul>
-  </section>
-
-<!-- Footer -->
-<footer class="page-footer">
-    <span>made by Eva Y for MEDP 285.</span>
-</footer>
-
-
-<!-- Scripts -->
-<!-- Animate -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!-- Scripts -->
+    <!-- Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

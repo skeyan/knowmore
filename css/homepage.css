@@ -72,15 +72,19 @@ https://codepen.io/tutsplus/pen/QNeJgR
   margin: 0;
 }
 
+.timeline .description-li {
+  padding-top: 15px;
+}
+
 /* Background of Timeline */
-.timeline ul {
+.timeline .main-ul {
   background: white;
   padding: 50px 0px;
   color: black;
 }
 
 /* Timeline "Line" */
-.timeline ul li {
+.timeline .main-ul .main-li {
   list-style-type: none;
   position: relative;
   width: 6px;
@@ -88,12 +92,12 @@ https://codepen.io/tutsplus/pen/QNeJgR
   background: black;
 }
 
-.timeline ul li:not(:first-child) {
+.timeline .main-ul .main-li:not(:first-child) {
   padding-top: 650px;
 }
 
 /* The "Circles" on the Line */
-.timeline ul li::after {
+.timeline .main-ul .main-li::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -106,7 +110,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
   z-index: 1;
 }
 
-.timeline ul li div {
+.timeline .main-ul .main-li div {
   position: relative;
   bottom: 0;
   width: 700px;
@@ -115,7 +119,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
   border: 4px solid blue;
 }
 
-.timeline ul li div::before {
+.timeline .main-ul .main-li div::before {
   content: "";
   position: absolute;
   bottom: 7px;
@@ -124,11 +128,11 @@ https://codepen.io/tutsplus/pen/QNeJgR
   border-style: solid;
 }
 
-.timeline ul li div {
+.timeline .main-ul .main-li div {
   left: 45px;
 }
 
-.timeline ul li div::before {
+.timeline .main-ul .main-li div::before {
   left: -15px;
   border-width: 8px 12px 8px 0;
   border-color: transparent blue transparent transparent;
@@ -136,7 +140,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
 
 time {
   display: block;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -144,13 +148,13 @@ time {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1520px) {
-  .timeline ul li div {
+  .timeline .main-ul .main-li div {
     width: 500px;
   }
 }
 
 @media screen and (max-width: 1110px) {
-  .timeline ul li div {
+  .timeline .main-ul .main-li div {
     width: 350px;
   }
 }
@@ -159,16 +163,19 @@ time {
   .homepage-header {
     font-size: 2rem;
   }
-  .timeline ul li div {
+  .homepage-header--icon {
+    font-size: 1.2rem;
+  }
+  .timeline .main-ul .main-li div {
     width: 250px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
+  .timeline .main-ul .main-li {
     margin-left: 20px;
   }
-  .timeline ul li div {
+  .timeline .main-ul .main-li div {
     width: calc(100vw - 91px);
   }
 }
