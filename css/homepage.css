@@ -3,24 +3,23 @@
 /* HEADER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .homepage-header {
-    height: 100vh;
-    font-size: 4rem;
-    text-align: center;
+  height: 100vh;
+  font-size: 4rem;
+  text-align: center;
 
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .homepage-header--icon {
-    font-size: 2rem;
-    margin-top: 20px;
-    display: block;
-    -webkit-animation: pulse 2s infinite;
-            animation: pulse 2s infinite;
-    color: blue;
+  font-size: 2rem;
+  margin-top: 20px;
+  display: block;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  color: blue;
 }
 
 .homepage-header--icon:hover {
@@ -30,40 +29,48 @@
 /* TEST ITEM
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
-  }
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
 
 @-webkit-keyframes pulse {
-    0% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0); }
-    50% {
-      -webkit-transform: translate(0, 10px);
-              transform: translate(0, 10px); }
-    100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0); } }
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes pulse {
-0% {
+  0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
-50% {
+    transform: translate(0, 0);
+  }
+  50% {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-100% {
+    transform: translate(0, 10px);
+  }
+  100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 /* TIMELINE
 https://codepen.io/tutsplus/pen/QNeJgR
@@ -72,8 +79,20 @@ https://codepen.io/tutsplus/pen/QNeJgR
   margin: 0;
 }
 
+/* Bullet list for internal timeline descriptions */
 .timeline .description-li {
   padding-top: 15px;
+}
+
+.timeline a {
+  color: blue;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+.timeline a:hover {
+  background-color: yellow;
+  font-weight: bold;
 }
 
 /* Background of Timeline */
@@ -143,6 +162,14 @@ time {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+highlight {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
 }
 
 /* GENERAL MEDIA QUERIES
