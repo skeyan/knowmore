@@ -32,6 +32,10 @@ Styling for the page giving information for organizations to donate to for abort
     min-height: 450px;
 }
 
+.donate-container .card:hover {
+    box-shadow: 10px -10px yellow;
+}
+
 .donate-container .card .card-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -48,7 +52,6 @@ Styling for the page giving information for organizations to donate to for abort
     transition: none;
     border-radius: 0;
     background-color: white;
-    width: 100%;
 }
 
 .donate-container .card .btn:hover {
