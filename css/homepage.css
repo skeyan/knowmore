@@ -176,6 +176,7 @@ highlight {
 }
 
 /* BACK TO TOP BUTTON
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #scrollToTopBtn {
   display: none;
@@ -190,10 +191,6 @@ highlight {
   cursor: pointer;
   padding: 20px;
   border-radius: 4px;
-}
-
-#scrollToTopBtn:hover {
-
 }
 
 /* GENERAL MEDIA QUERIES
