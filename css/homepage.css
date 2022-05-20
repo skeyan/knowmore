@@ -26,22 +26,6 @@
   cursor: pointer;
 }
 
-/* TEST ITEM
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.item {
-  width: 200px;
-  height: 200px;
-  margin: 50px auto;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ccc;
-  text-align: center;
-  color: #fff;
-  font-size: 3em;
-}
-
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
@@ -189,6 +173,27 @@ highlight {
 .timeline .media-collage {
   left: -439px;
   transform: translate3d(-700px, 400px, 0);
+}
+
+/* BACK TO TOP BUTTON
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: 2px solid black;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+#scrollToTopBtn:hover {
+
 }
 
 /* GENERAL MEDIA QUERIES
