@@ -71,6 +71,9 @@
       </div>
     </nav>
 
+    <!-- Scroll To Top Button -->
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
     <!-- Header -->
     <div class="homepage-header" data-aos="fade-up">
       <div class="homepage-header--text">
@@ -191,28 +194,6 @@
                   deaths</highlight
                 >
                 that year, according to the Guttmacher Institute.
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="main-li">
-          <div class="description" data-aos="fade-up">
-            <time>1955: Conference on Abortion Legalization</time>
-            <ul>
-              <li class="description-li">
-                In response to increasingly alarming media coverage of unsafe,
-                illegal abortions, Planned Parenthood held a first-of-its-kind
-                conference on the issue of abortion.
-              </li>
-              <li class="description-li">
-                The doctors who attended the national conference on abortion
-                made the bold move to publicly call for abortion law reform.
-              </li>
-              <li class="description-li">
-                Conference attendees said that laws should be rewritten to allow
-                doctors greater latitude to provide abortion services, which
-                would improve public health and access to reproductive health
-                care for people of different economic circumstances.
               </li>
             </ul>
           </div>
@@ -399,13 +380,6 @@
                 to the pregnant person).
               </li>
               <li class="description-li">
-                The legislation was created by Rep. Henry Hyde. “I would
-                certainly like to prevent, if I could legally, anybody having an
-                abortion: a rich woman, a middle class woman, or a poor woman,”
-                he said. “Unfortunately, the only vehicle available is the
-                [Medicaid] bill.”
-              </li>
-              <li class="description-li">
                 Because of centuries of systemic racism and bias, Medicaid
                 disproportionately serves Black, Latino, and LGBTQ+ communities
                 — people who already face other barriers to care and economic
@@ -422,6 +396,15 @@
                 Amendment from its presidential budget.
               </li>
             </ul>
+          </div>
+        </li>
+        <li class="interlude--text">
+          <div class="interlude--text-content"  data-aos="flip-left">
+            “I would
+            certainly like to prevent, if I could legally, anybody having an
+            abortion: a rich woman, a middle class woman, or a poor woman.
+            Unfortunately, the only vehicle available is the
+            [Medicaid] bill.” - Rep. Henry Hyde, creator of the Hyde Amendment
           </div>
         </li>
         <li class="main-li">
@@ -591,6 +574,27 @@
         </li>
       </ul>
     </section>
+    <!-- Bottom Banner -->
+    <div class="banner container-fluid">
+      <div class="banner-text">
+        <div class="banner-text--title">
+          <h1>You can take action.</h1>
+          <h2>Read up, and support the cause for abortion rights.</h2>
+        </div>
+        <div class="banner-text--buttons">
+          <a
+            href="./facts.html"
+            class="btn btn-primary"
+            >Get the Facts</a
+          >
+          <a
+            href="./donate.html"
+            class="btn btn-primary"
+            >Donate</a
+          >
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer">
@@ -609,5 +613,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom -->
+    <script src="./js/scrollToTop.js"></script>
   </body>
 </html>
