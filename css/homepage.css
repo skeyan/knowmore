@@ -87,7 +87,7 @@ https://codepen.io/tutsplus/pen/QNeJgR
 }
 
 /* Timeline "Line" */
-.timeline .main-ul .main-li, .timeline .main-ul .interlude--text {
+.timeline .main-ul .main-li, .timeline .main-ul .interlude--text, .interlude--heading {
   list-style-type: none;
   position: relative;
   width: 6px;
@@ -101,6 +101,10 @@ https://codepen.io/tutsplus/pen/QNeJgR
 
 .interlude--text {
   padding-top: 250px;
+}
+
+.interlude--heading {
+  padding-top: 50px;
 }
 
 /* The "Circles" on the Line */
