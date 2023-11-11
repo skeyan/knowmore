@@ -27,7 +27,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 A simple website that provides visuals alongside text meant to educate viewers on U.S. abortion history.
-Made for a web production course.
+Made for a web production course to explore developing for a cause.
 
 Acknowledgements: Professor Mark Ramos
 
