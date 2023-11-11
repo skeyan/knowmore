@@ -33,6 +33,7 @@ Acknowledgements: Professor Mark Ramos
 
 ### Built With
 * JavaScript
+* CSS, HTML
 * Favico
 * Bootstrap
 * FontAwesome
