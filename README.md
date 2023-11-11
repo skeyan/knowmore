@@ -1,7 +1,7 @@
 # knowmore
 
 ![A project picture explaining that Knowmore is a website with an animated vertical timeline describing abortion history in the United States.
-](https://github.com/skeyan/knowmore/assets/43856300/4e0abd17-2ec2-4cf1-87bb-7faa5d0a615a)
+](https://github.com/skeyan/knowmore/assets/43856300/df0de459-e8da-4a8d-aa78-ecf05e246876)
 
 <div align="center">
   Link: <a href="https://skeyan.github.io/knowmore/" target="_blank">skeyan.github.io/knowmore</a>
